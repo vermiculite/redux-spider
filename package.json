@@ -1,0 +1,43 @@
+{
+  "name": "redux-spider",
+  "version": "0.0.1",
+  "description": "redux spider app",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "mrspider-request": "^2.1.1",
+    "redux-saga": "^0.10.4"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "coveralls": "^2.11.3",
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5",
+    "nock": "^2.6.0",
+    "sinon": "^1.15.3"
+  },
+  "scripts": {
+    "test": "mocha --require test/setup --recursive",
+    "test-watch": "mocha --require test/setup --recursive --watch",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --require test/setup --reporter dot --check-leaks test/ --recursive",
+    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vermiculite/redux-spider.git"
+  },
+  "keywords": [
+    "spider",
+    "crawler",
+    "redux"
+  ],
+  "author": "seanowenhayes@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vermiculite/redux-spider/issues"
+  },
+  "homepage": "https://github.com/vermiculite/redux-spider#readme"
+}
